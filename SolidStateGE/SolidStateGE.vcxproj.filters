@@ -27,9 +27,15 @@
     <ClInclude Include="src\SolidState\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\SolidState\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SolidState\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SolidState\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

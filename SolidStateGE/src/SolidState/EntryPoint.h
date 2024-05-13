@@ -17,7 +17,16 @@ int main(int argc, char** argv)
 	Welcome to the SolidState Game Engine. >>> Version 0.01 <<<
 	)";
 
-	printf("%s", asciiArt);
+	//printf("%s", asciiArt);
+
+	SolidState::Log::Init();
+	//SolidState::Log::GetCoreLogger()->warn("Initialized Log!"); // use micro instead below
+	SLD_CORE_WARN("Initialized Log!");
+
+	//SolidState::Log::GetClientLogger()->info("Hello!"); // use micro instead below
+	int a = 5;
+	SLD_INFO("Hello! Var={0}", a);
+
 	auto app = SolidState::CreateApplication();
 	app->Run();
 	delete app;

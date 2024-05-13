@@ -1,0 +1,3 @@
+[submodule "SolidStateGE/Vendor/spdlog"]
+	path = SolidStateGE/Vendor/spdlog
+	url = https://github.com/gabime/spdlog
