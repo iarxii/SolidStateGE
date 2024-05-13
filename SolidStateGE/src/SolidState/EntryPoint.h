@@ -7,17 +7,18 @@ extern SolidState::Application* SolidState::CreateApplication();
 int main(int argc, char** argv) 
 {
     const char* asciiArt = R"(
-	 _____       _ _     _ _____ _        _         _____ _____ 
-	/  ___|     | (_)   | /  ___| |      | |       |  __ |  ___|
-	\ `--.  ___ | |_  __| \ `--.| |_ __ _| |_ ___  | |  \| |__  
-	 `--. \/ _ \| | |/ _` |`--. | __/ _` | __/ _ \ | | __|  __| 
-	/\__/ | (_) | | | (_| /\__/ | || (_| | ||  __/ | |_\ | |___ 
-	\____/ \___/|_|_|\__,_\____/ \__\__,_|\__\___|  \____\____/ 
-                                                            
-	Welcome to the SolidState Game Engine. >>> Version 0.01 <<<
-	)";
+ _____       _ _     _ _____ _        _         _____ _____ 
+/  ___|     | (_)   | /  ___| |      | |       |  __ |  ___|
+\ `--.  ___ | |_  __| \ `--.| |_ __ _| |_ ___  | |  \| |__  
+ `--. \/ _ \| | |/ _` |`--. | __/ _` | __/ _ \ | | __|  __| 
+/\__/ | (_) | | | (_| /\__/ | || (_| | ||  __/ | |_\ | |___ 
+\____/ \___/|_|_|\__,_\____/ \__\__,_|\__\___|  \____\____/ 
+                                                        
+Welcome to the SolidState Game Engine. >>> Version 0.01 <<<
+															
+)";
 
-	//printf("%s", asciiArt);
+	printf("%s", asciiArt);
 
 	SolidState::Log::Init();
 	//SolidState::Log::GetCoreLogger()->warn("Initialized Log!"); // use micro instead below
